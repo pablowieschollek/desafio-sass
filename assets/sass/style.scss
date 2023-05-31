@@ -1,0 +1,38 @@
+//cambio de tipografia 
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Yellowtail&display=swap');
+
+$font-family-sans-serif:     'Yellowtail', cursive, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       'Niconne', cursive, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+.card {
+    @extend .bg-dark;
+
+    @extend .text-light;
+
+
+    .btn {
+         @extend .bg-purple;
+    }
+    
+    .card-title {
+        @extend .text-purple;
+    }
+
+}
+
+//creacion nuvea variable purpura
+
+$violet: #cf649a;
+$dark: #1e1d23;
+$light: #fff;
+
+//theme 
+
+$theme-colors: (
+    "purple": $violet,
+    "dark": $dark,
+    "light": $light
+
+) !default;
+
+@import "bootstrap.scss" 
